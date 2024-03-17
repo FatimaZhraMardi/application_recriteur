@@ -1,0 +1,83 @@
+
+
+.job-list-container{
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: "Rubik",sans-serif;
+    
+}
+h1{
+    color: #ffc400;
+}
+.job-list-container h2{
+    font-size: 30px;
+    border-left: 4px #19283f solid !important;
+    color: #19283f;
+    padding-left: 20px;
+}
+.job-list-container .jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.job-list-container i{
+    width: 60px;
+}
+.job-list-container .job{
+    box-shadow: 0 4px 24px -8px #19283f;
+    padding: 24px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 400ms ease;
+}
+.job-list-container .job:hover{
+    transform: scale(1.03);
+}
+.job-list-container .salaire{
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    color: #ffc400; 
+}
+.job-list-container .job-title{
+  font-size: 20px;  
+  padding: 10px 0;
+  margin: 0;
+  color: #19283f;
+}
+
+.job-list-container .details{
+    margin-top: 6px;
+    font-size: 14px;
+    color: #19283f;
+    line-height: 1.8;
+    flex: 1;
+}
+
+.job-list-container .details-btn{
+    text-decoration: none;
+    border: 1px solid #19283f;
+    color: black;
+    padding: 8px 16px;
+    border-radius:8px ;
+    margin-top: 20px;
+    transition:all 400ms ease;
+}
+.job-list-container .details-btn:hover{
+    background-color: #19283f;
+    color: white;
+}
+@media(max-width: 940px){
+   .job-list-container .jobs{
+    grid-template-columns:1fr 1fr ;
+   }
+}
+@media(max-width: 640px){
+    .job-list-container .jobs{
+     grid-template-columns:1fr  ;
+     max-width: 400px;
+     margin: 0 auto;
+    }
+ }

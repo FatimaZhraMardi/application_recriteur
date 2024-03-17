@@ -1,0 +1,80 @@
+.w-400{
+    width: 400px;
+}
+.fs-xs{
+    font-size: 1rem;
+}
+.w-10{
+    width: 15%;
+}
+a {
+    text-decoration: none;
+}
+.fs-big{
+    font-size: 5rem!important;
+}
+.chat-box{
+    overflow-y: auto;
+    height: 20rem;
+    max-height: 50vh;
+}
+.w-15{
+    width: 15%;
+}
+.fs-sm{
+    font-size: 1rem!important;
+    color: #19283f;
+   font-weight: 10px;
+}
+.rtext{
+    width: 65%;
+    background: #fff;
+    color: #19283f;
+}
+.ltext{
+    width: 65%;
+    background: #19283f;
+    color: #fff;
+}
+*::-webkit-scrollbar{
+    width: 3px;
+}
+*::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+*::-webkit-scrollbar-thumb{
+    background: #aaa;
+}
+*::-webkit-scrollbar-thumb:hover{
+    background: #19283f;
+}
+.btn{
+   background: #ffc400!important;
+}
+.fs-4{
+    color:#19283f;
+}
+.input-group  button{
+   cursor: pointer;
+   
+}
+.input-group  button ion-icon{
+    font-size: 20px;
+    color: #19283f;
+}
+.list-group-item  a{
+    text-decoration: none; 
+    color: #19283f;
+}
+.alert-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.alert-info ion-icon{
+    font-size: 50px !important;
+}
+.alert-info p{
+    font-size: 15px !important;
+}
