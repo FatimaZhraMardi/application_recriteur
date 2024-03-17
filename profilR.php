@@ -33,8 +33,8 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
             <button type="button" class="btn-close text-reset shadow-none " data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <button class="btn shadow-none ">parametre</button>
-            <button class="btn shadow-none ">Créer un annonce</button>
+            <a href="#" class="opt">parametre</a>
+            <a href="" class="opt">Créer un annonce</a>
           </div>
     </div>
     </div>
