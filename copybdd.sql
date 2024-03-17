@@ -39,7 +39,7 @@ CREATE TABLE `annonce` (
 -- Structure de la table `condiat`
 --
 
-CREATE TABLE `condiat` (
+CREATE TABLE `condidat` (
   `id_condidat` int(11) NOT NULL,
   `non` text NOT NULL,
   `prenom` text NOT NULL,
