@@ -60,7 +60,7 @@ CREATE TABLE `condiat` (
 -- Structure de la table `entrprose`
 --
 
-CREATE TABLE `entrprose` (
+CREATE TABLE `entrprise` (
   `id_entro` int(11) NOT NULL,
   `non_entro` text NOT NULL,
   `demaine` text NOT NULL,
