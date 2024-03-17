@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+
+    <fieldset class="border1">
     <div class="intro">
         <p>Recruteurs, inscrivez-vous et publiez vos offres d'emploi !</p>
     </div>
+</fieldset>
     <br><br/>
+    <form   action="traitement.php" method="post">
     <!-- Votre entreprise -->
     <fieldset class="border">
         <legend class="sous_border" >Votre entreprise</legend>
-    <form   action="traitement.php" method="post">
+    
    
         <!-- pour aligne les case  -->
         <div class="form-row">
@@ -36,12 +41,12 @@
         </div>
         
         <!-- <input type="submit" value="S'inscrire"> -->
-    </form>
+    
    </fieldset> <br/>
 <!--  vos coordonnees de contact  -->
    <fieldset class="border">
-    <legend class="hhhh" >vos coordonnees de contact</legend>
-<form   action="traitement.php" method="post">
+    <legend class="sous_border" >vos coordonnees de contact</legend>
+
 
     <div class="form-row">
         <label for="civilite"> civilité :</label>
@@ -56,7 +61,7 @@
     </div>
     <br><br/>
     <div class="form-row">
-        <form action="traitement.php" method="post">
+       
             <label for="fonction">Quelle est votre fonction ?</label>
             <select id="fonction" name="fonction">
                 <option value="" disabled selected>Sélectionnez une fonction</option>
@@ -66,7 +71,7 @@
                 <option value="directeur_general">Directeur général</option>
                 <!-- Ajoutez d'autres options ici -->
             </select>
-           </form>
+           
   
         <label for="page">page Linkedin :</label>
       <input type="text" id="page" name="page" required placeholder="page Linkedin">
@@ -83,14 +88,14 @@
             <!-- Ajoutez d'autres options ici -->
         </select>
     <!-- <input type="submit" value="S'inscrire"> -->
-</form>
+
 </fieldset>
 <br><br/>
 
 
 
 <fieldset class="border">
-    <legend class="sous_border">Description de l'entreprise</legend>
+    <legend class="sous_border">Vos identifiants</legend>
     <label for="secteur_activite">Secteur d'activité (max. 5 choix) :</label><br>
     <div id="secteur_activite">
         <input type="checkbox" id="activites_associatives" name="secteur" value="activites_associatives">
@@ -138,7 +143,7 @@
 <!--  email -->
 <fieldset class="border">
     <legend class="sous_border">Votre entreprise</legend>
-    <form action="traitement.php" method="post" onsubmit="return validateForm()">
+    
 
         <!-- pour aligne les case  -->
         <div class="form-row">
@@ -154,12 +159,13 @@
         </div>
         <br>
         <!-- <input type="submit" value="Valider"> -->
-    </form>
+   
 </fieldset>
 <br><br/>
 <div class="container">
-<input class="valide" type="submit" value="Valider" onclick="return validateForm()">
+<input class="valide" type="submit" name="valid" value="Valider" onclick="return validateForm()">
 </div>
+</form>
 <script>
     function validateForm() {
         var password = document.getElementById("password").value;
@@ -183,6 +189,7 @@
             alert("Veuillez remplir tous les champs.");
             return false; // Annuler la soumission du formulaire
         }
+        // window.location.href = "verification.html";
         return true; // Soumettre le formulaire si les mots de passe correspondent et si tous les champs sont remplis
     }
 </script>

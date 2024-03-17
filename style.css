@@ -8,7 +8,7 @@ body{
    
     text-align: center; 
     padding: 20px;
-    
+   
     padding: 10px 20px; 
     font-size: 70px; 
     background-color:  #ffffff; 
@@ -16,6 +16,7 @@ body{
     transition: all 0.3s ease; 
 }
 .intro {
+ 
     background: linear-gradient(
         to right,rgba(3, 25, 72, 0.8),#f4e53a 35%,#ff04a7);
     background-size: 200% auto;
@@ -31,13 +32,22 @@ body{
 }
 
 /* pour change le background de botre entreprise  */
-.border{
+.border1{    
+    border: 3px   rgba(151, 165, 194, 0.8)  solid;
+    background-color: rgb(21 27 41 / 80%);
+    border-radius: 15px;
+    text-align: justify;
+    /* background-color: #ffffff; */
+}
+
+.border
+{
+  
     
     border: 3px   rgba(151, 165, 194, 0.8)  solid;
-   
-   border-radius: 15px;
-   text-align: justify;
-   background-color: #ffffff;
+    border-radius: 15px;
+    text-align: justify;
+    background-color: #ffffff;
 }
 .form-row {
     
@@ -105,16 +115,19 @@ position: relative;
 /* style de page inscription  */
 .aaaa{
     display: flex;
-    padding: 50px;
-    background-color:rgb(7 11 20) ;
+    padding: 100px;
+    background-color:#091456 ;
     border: 2px solid 596a9f;
     border-radius: 10px;
     justify-content: center;
     align-items: center; 
+    box-shadow: 0 0 20px #00fffb,
+                0 0 40px #0081bc;
+     margin:200px 10px ;
 }
 .button{
     font-weight: 900;
-    background: linear-gradient(0deg, rgba(63,94,251,1) 0%),rgb(146, 162, 242);
+    background: linear-gradient(0deg, #00fffb 0%),rgb(146, 162, 242);
     box-shadow: rgba(146, 162, 242) 0px 40px 29px 0px;
     will-change: transform;
     transition: all 0.3s;
@@ -128,16 +141,17 @@ position: relative;
 }
 .button {
     display: block;
-    background-color: rgb(21 27 41 / 80%);
-    padding: 20px 40px; 
+    background-color: rgba(4, 25, 74, 0.8);
+    padding:100px; 
     margin: 20px;
     border: 2px solid rgba(195, 190, 246, 0.8);
     border-radius: 10px;
     text-decoration: none;
     color: #ffffff;
+    
     font-weight: bold;
     text-align: center;
-    width: 200px;
+    width: 210px;
     height: 100px;
     line-height: 100px;
 }
@@ -145,5 +159,24 @@ position: relative;
 .button:hover {
     background-color: #6b8bbc;
 }
+.intro1{
+    text-shadow: 0px 0px 10px #ff04a7,
+                 0px 0px 20px #6b8bbc,
+                 0px 0px 40px #f4e53a,
+                 0px 0px 80px #596a9f;
+    font-size: 50px;
 
+    color: #6b8bbc;
+    text-align: center;
 
+}
+
+    .border2 {
+        border: none
+       
+    }
+    
+    .eee{
+        
+    }
+   
