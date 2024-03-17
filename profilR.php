@@ -34,6 +34,7 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
           </div>
           <div class="offcanvas-body">
             <button class="btn shadow-none ">parametre</button>
+            <button class="btn shadow-none ">Créer un annonce</button>
           </div>
     </div>
     </div>
