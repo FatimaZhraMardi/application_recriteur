@@ -1,7 +1,6 @@
 <?php
-include_once('data_base.pho')
-if(isset($_POST['submit']))
-{
+include_once('data_base.php');
+if(isset($_POST['submit'])){
     $titre = $_POST['titre'];
     $description = $_POST['description'];
     $salaire = $_POST['salaire'];
@@ -9,17 +8,17 @@ if(isset($_POST['submit']))
     $pdoQuery = "INSERT INTO `annonce`(`titre`, `description`, `salaire`) VALUES (:titre,:description,:salaire)";
     
     $pdoResult = $cnx->prepare($pdoQuery);
-    
+   
     $pdoExec = $pdoResult->execute(array(":titre"=> $titre,":description"=>$description,":salaire"=>$salaire));
     
       
-    if($pdoExec)
-    {
-        echo 'Data Inserted';
+    if($pdoExec){
+       alert('success');
+        header("location: offre.php");
     }else{
-        echo 'Data Not Inserted';
-    }
-}
+       alert('ERROR');
+        header("location:annonce.php")
+}}
 
 
 ?>
