@@ -17,10 +17,10 @@ if(isset($_POST['submit'])){
         header("location: offre.php");
     }else{
        alert('ERROR');
-        header("location:annonce.php")
-}}
-
-
+        header("location:annonce.php");
+    }
+}
+$cnx = null;
 ?>
 <!DOCTYPE html>
 <html lang="en">
