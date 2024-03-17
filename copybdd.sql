@@ -41,7 +41,7 @@ CREATE TABLE `annonce` (
 
 CREATE TABLE `condidat` (
   `id_condidat` int(11) NOT NULL,
-  `non` text NOT NULL,
+  `nom` text NOT NULL,
   `prenom` text NOT NULL,
   `email` text NOT NULL,
   `password` text NOT NULL,
@@ -50,7 +50,9 @@ CREATE TABLE `condidat` (
   `civilite` text NOT NULL,
   `pays` text NOT NULL,
   `ville` text NOT NULL,
-  `domain` text NOT NULL,
+  `domaine` text NOT NULL,
+  `fonction` text NOT NULL,
+  `formation` text NOT NULL,
   `cv` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
@@ -73,9 +75,9 @@ CREATE TABLE `entrprise` (
 -- Structure de la table `recreteur`
 --
 
-CREATE TABLE `recreteur` (
+CREATE TABLE `recruteur` (
   `id` int(11) NOT NULL,
-  `non` varchar(30) NOT NULL,
+  `nom` varchar(30) NOT NULL,
   `prenom` text NOT NULL,
   `email` text NOT NULL,
   `password` text NOT NULL,
