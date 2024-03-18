@@ -26,7 +26,9 @@ if(isset($_POST['submit'])){
         }
         else{
             echo 'Error inserting data';
+            echo "Error: " . $pdoResult->errorInfo();
             header("Location:annonce.php");
+
             exit();
         }
     }
