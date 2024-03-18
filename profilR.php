@@ -1,6 +1,6 @@
 <?php
 include_once('data_base.php');
-$sql = 'SELECT id,domaine,fonction,formation FROM `recruteur`';
+$sql = 'SELECT `id`,`domaine`,`fonction`,`formation` FROM `recruteur`';
 $sth = $cnx->query($sql);
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
