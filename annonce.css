@@ -1,0 +1,139 @@
+.user{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+h1{
+    color: #ffc400;
+    text-align: center;
+}
+@media (min-width: 992px){
+#maforme{
+    padding-left: 25rem;
+   
+}}
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+  }
+#submit , #reset{
+   color: white;
+   background-color: #19283f;
+   text-decoration: none; 
+   padding: 10px 20px; 
+   border-radius: 4px; 
+   display: inline-block; 
+   transition: background-color 0.3s;
+   border: none;
+}
+#submit:hover,
+#reset:hover
+{
+    color:#19283f ;
+    background-color: aqua;
+}
+
+footer{
+    background: #19283f;
+    padding-top: 50px;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+.footer-content h3{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    color: white;
+    width:190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    color: white;
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #ffc400;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #ffc400;
+}
+.social-icons i:hover{
+    color: #ffc400;
+}
+.bottom-bar{
+    background: #ffc400;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #19283f;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
