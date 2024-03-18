@@ -1,10 +1,10 @@
 <?php
-include_once('data_base.php');
+
 if(isset($_POST['submit'])){
     $titre = $_POST['titre'];
     $description = $_POST['description'];
     $salaire = $_POST['salaire'];
-
+    include_once('data_base.php');
     $pdoQuery = "INSERT INTO `annonce`(`titre`, `description`, `salaire`) VALUES (:titre,:description,:salaire)";
     
     $pdoResult = $cnx->prepare($pdoQuery);
