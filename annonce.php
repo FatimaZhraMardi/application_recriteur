@@ -59,7 +59,7 @@ $cnx = null;
     <br>
     <h1>Publier une annonce</h1>
     <div class="container-fluid">
-    <form action="offre.php" id="maforme" method="post">       
+    <form  id="maforme" method="post">       
         <label>Titre: </label>
         <br>
         <input type="text" name="titre">
