@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
         include_once('data_base.php');
     }
 
-    $pdoQuery = "INSERT INTO `annonce`(`titre`, `description`, `salaire`) VALUES (:titre,:description,:salaire)";
+    $pdoQuery = "INSERT INTO `annonce` VALUES (:titre,:description,:salaire)";
 
     $pdoResult = $cnx->prepare($pdoQuery);
 
