@@ -8,15 +8,19 @@ if(isset($_POST['submit'])){
     $pdoQuery = "INSERT INTO `annonce`(`titre`, `description`, `salaire`) VALUES (:titre,:description,:salaire)";
     
     $pdoResult = $cnx->prepare($pdoQuery);
-   
+    if($titre == '' || $description == '' || $salaire == ''){
+        echo 'All fields are required';
+        exit();
+    }
+    else{
     $pdoExec = $pdoResult->execute(array(":titre"=> $titre,":description"=>$description,":salaire"=>$salaire));
-    
+    }
       
     if($pdoExec){
-       alert('success');
+       
         header("location: offre.php");
     }else{
-       alert('ERROR');
+       
         header("location:annonce.php");
     }
 }
