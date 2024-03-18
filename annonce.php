@@ -21,13 +21,13 @@ if(isset($_POST['submit'])){
 
         if($pdoExec){
             echo 'Data inserted successfully';
-           // header("Location: offre.php");
+           header("Location: offre.php");
             exit();
         }
         else{
             echo 'Error inserting data';
             echo "Error: " . $pdoResult->errorInfo();
-           // header("Location:annonce.php");
+            header("Location:annonce.php");
 
             exit();
         }
@@ -50,16 +50,12 @@ $cnx = null;
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Recrutement</a>
         
-            <form class="d-flex">
-              <input class="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline shadow-none" type="submit">Search</button>
-               <button class="btn shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="per1.webp" class="user"></button>
-            </form>
+        
     </nav>
     <br>
     <h1>Publier une annonce</h1>
     <div class="container-fluid">
-    <form  id="maforme" method="post">       
+    <form  id="maforme" method="post"  action="annonce.php">       
         <label>Titre: </label>
         <br>
         <input type="text" name="titre">
