@@ -1,6 +1,6 @@
 <?php
 include_once('data_base.php');
-$sql = 'SELECT id,domaine,fonction,formation FROM `condidat`';
+$sql = 'SELECT id_condidat,domaine,fonction,formation FROM `condidat`';
 $sth = $cnx->query($sql);
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
