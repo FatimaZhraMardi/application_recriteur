@@ -32,24 +32,25 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
             </div>
         </div>
     </div>
+    <div class="job">
+    <i class="fa fa-briefcase"></i>
     <?php  
         foreach($result as $row){
         ?>
-            <div class="job">
-                <i class="fa fa-briefcase"></i>
+            
                 <h3 class="job-title"><?php echo $row['titre'] ?></h3>
                 <div class="details">
                   <?php echo $row['description'] ?>
                 </div>
                 <a href="#" class="details-btn">plus de détails</a>
                 <span class="salaire"><?php echo $row['salaire'] ?></span>
-            </div>
-        </div>
-    </div>
+           
          <?php 
-        }      
-    
+        }       
     ?>
+    </div>
+     </div>
+    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
