@@ -1,27 +1,34 @@
 <?php
-
 if(isset($_POST['submit'])){
-    $titre = $_POST['titre'];
-    $description = $_POST['description'];
-    $salaire = $_POST['salaire'];
-    include_once('data_base.php');
+    $titre = filter_var($_POST['titre'], FILTER_SANITIZE_STRING);
+    $description = filter_var($_POST['description'], FILTER_SANITIZE_STRING);
+    $salaire = filter_var($_POST['salaire'], FILTER_SANITIZE_NUMBER_INT);
+
+    if(!isset($cnx)){
+        include_once('data_base.php');
+    }
+
     $pdoQuery = "INSERT INTO `annonce`(`titre`, `description`, `salaire`) VALUES (:titre,:description,:salaire)";
-    
+
     $pdoResult = $cnx->prepare($pdoQuery);
+
     if($titre == '' || $description == '' || $salaire == ''){
         echo 'All fields are required';
         exit();
     }
     else{
-    $pdoExec = $pdoResult->execute(array(":titre"=> $titre,":description"=>$description,":salaire"=>$salaire));
-    }
-      
-    if($pdoExec){
-       
-        header("location: offre.php");
-    }else{
-       
-        header("location:annonce.php");
+        $pdoExec = $pdoResult->execute(array(":titre"=> $titre,":description"=>$description,":salaire"=>$salaire));
+
+        if($pdoExec){
+            echo 'Data inserted successfully';
+            header("Location: offre.php");
+            exit();
+        }
+        else{
+            echo 'Error inserting data';
+            header("Location:annonce.php");
+            exit();
+        }
     }
 }
 $cnx = null;
