@@ -20,16 +20,6 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
     <br>
     <div class="job-list-container">
         <h2>obtenir la liste de toutes les offres d'emploi récentes </h2>
-        <div class="jobs">
-            <div class="job">
-                <i class="fa fa-briefcase"></i>
-                <h3 class="job-title">ingénieur-conseil</h3>
-                <div class="details">
-                   hiiiiii
-                </div>
-                <a href="#" class="details-btn">plus de détails</a>
-                <span class="salaire">bbbbbbb</span>
-            </div>
     <?php  
             foreach($result as $row){
                 echo '
