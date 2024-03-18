@@ -29,7 +29,6 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
                     <div class="details">
                       ' . $row['description'] . '
                     </div>
-                    <a href="#" class="details-btn">plus de détails</a>
                     <span class="salaire">' . $row['salaire'] . '</span>
                 </div>
                 ';
