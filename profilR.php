@@ -1,6 +1,6 @@
 <?php
 include_once('data_base.php');
-$sql = 'SELECT id,domaine,fonction,formation FROM recruteur';
+$sql = 'SELECT id,nom,domaine,fonction,formation FROM recruteur';
 $sth = $cnx->query($sql);
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -27,7 +27,7 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
               
           
           
-      <button class="btn shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="per1.webp" class="user"></button>
+      <button class="btn shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><?php echo $row['nom']?></button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
             <button type="button" class="btn-close text-reset shadow-none " data-bs-dismiss="offcanvas" aria-label="Close"></button>
