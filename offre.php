@@ -30,26 +30,22 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
                 <a href="#" class="details-btn">plus de détails</a>
                 <span class="salaire">bbbbbbb</span>
             </div>
-        </div>
-    </div>
-    <div class="job">
-    <i class="fa fa-briefcase"></i>
     <?php  
-        foreach($result as $row){
-        ?>
-            
-                <h3 class="job-title"><?php echo $row['titre'] ?></h3>
-                <div class="details">
-                  <?php echo $row['description'] ?>
+            foreach($result as $row){
+                echo '
+                <div class="job">
+                    <i class="fa fa-briefcase"></i>
+                    <h3 class="job-title">' . $row['titre'] . '</h3>
+                    <div class="details">
+                      ' . $row['description'] . '
+                    </div>
+                    <a href="#" class="details-btn">plus de détails</a>
+                    <span class="salaire">' . $row['salaire'] . '</span>
                 </div>
-                <a href="#" class="details-btn">plus de détails</a>
-                <span class="salaire"><?php echo $row['salaire'] ?></span>
-           
-         <?php 
-        }       
-    ?>
-    </div>
-     </div>
+                ';
+            }
+        ?>
+       </div>
     </div>
 
 </body>
