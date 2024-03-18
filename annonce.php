@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
         include_once('data_base.php');
     }
 
-    $pdoQuery = "INSERT INTO `annonce` VALUES (:titre,:description,:salaire)";
+    $pdoQuery = "INSERT INTO `annonce`(`titre`, `description`, `salaire`) VALUES (:titre,:description,:salaire)";
 
     $pdoResult = $cnx->prepare($pdoQuery);
 
@@ -21,13 +21,13 @@ if(isset($_POST['submit'])){
 
         if($pdoExec){
             echo 'Data inserted successfully';
-            header("Location: offre.php");
+           // header("Location: offre.php");
             exit();
         }
         else{
             echo 'Error inserting data';
             echo "Error: " . $pdoResult->errorInfo();
-            header("Location:annonce.php");
+           // header("Location:annonce.php");
 
             exit();
         }
