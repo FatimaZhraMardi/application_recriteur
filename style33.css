@@ -1,0 +1,233 @@
+
+/* Pour les écrans jusqu'à 768px de large
+@media only screen and (max-width: 768px) {
+    .button {
+        /* Styles spécifiques pour les petits écrans */
+        /* font-size: 20px;
+        padding: 20px;
+    }
+} */
+
+/* Pour les écrans entre 768px et 1200px de large */
+/* @media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .button {
+        /* Styles spécifiques pour les écrans moyens */
+        /* font-size: 25px;
+        padding: 30px;
+    } */
+/* } */ */
+
+/* Pour les écrans supérieurs à 1200px de large */
+/* @media only screen and (min-width: 1200px) {
+    .button {
+        /* Styles spécifiques pour les grands écrans */
+        /* font-size: 30px;
+        padding: 40px;
+    }
+} */ */ */
+
+
+body{
+    /* background-color:rgba(195, 190, 246, 0.8) ; */
+    background-color: #ffffff;
+}
+
+/* pour change le background depargraphe  */
+.intro{
+   
+    text-align: center; 
+    padding: 20px;
+   
+    padding: 10px 20px; 
+    font-size: 70px; 
+    background-color:  #ffffff; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+.intro {
+ 
+    background: linear-gradient(
+        to right,rgba(3, 25, 72, 0.8),#f4e53a 35%,#ff04a7);
+    background-size: 200% auto;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s linear infinite;
+
+}
+@keyframes gradient{
+    0%{background-position: 0% 75%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 70%;}
+}
+
+/* pour change le background de botre entreprise  */
+.border1{    
+    border: 3px   rgba(151, 165, 194, 0.8)  solid;
+    background-color: rgb(21 27 41 / 80%);
+    border-radius: 15px;
+    text-align: justify;
+    /* background-color: #ffffff; */
+}
+
+.border
+{
+  
+    
+    border: 3px   rgba(151, 165, 194, 0.8)  solid;
+    border-radius: 15px;
+    text-align: justify;
+    background-color: #ffffff;
+}
+.form-row {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px; 
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+}
+
+.form-row label {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+ .sous_border{
+    border: 3px solid rgba(151, 165, 194, 0.8)  ;
+    border-radius: 15px;
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: #ffffff; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.form-row input {
+    flex: 2;
+}
+.form-row {
+position: relative;
+
+}
+.valide {
+    border: 3px solid rgba(151, 165, 194, 0.8) ;
+    border-radius: 15px;
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color:#ffffff; 
+    position: relative;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+.valide:hover {
+    letter-spacing: 0.25rem;
+    background: var(--color);
+    color: var(--color);
+    box-shadow: 0 0 35px var(--color);
+    background-color: #596a9f; 
+    transform: scale(1.1); 
+}
+
+.container {
+ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+   
+    
+}
+/* style de page inscription  */
+.aaaa{
+    display: flex;
+    padding: 100px;
+    /* background-color:#091456 ; */
+    border: 2px solid 596a9f;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center; 
+    box-shadow: 0 0 20px #00fffb,
+                0 0 40px #0081bc;
+     margin:200px 10px ;
+}
+.button{
+    font-weight: 900;
+    padding: 100px;
+    background: linear-gradient(0deg, #00fffb 0%),rgb(146, 162, 242);
+    box-shadow: rgba(146, 162, 242) 0px 40px 29px 0px;
+    will-change: transform;
+    transition: all 0.3s;
+    
+}
+.button:hover{
+    transform: perspective(100px) rotateX(3deg) translatey(2px);
+}
+.button:active{
+    transform: perspective(100px) rotateX(3deg) translatey(2px);
+}
+.button {
+    display: block;
+    background-color: rgba(4, 25, 74, 0.8);
+    padding:200px; 
+    margin: 20px;
+    border: 2px solid rgba(195, 190, 246, 0.8);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    
+    font-weight: bold;
+    text-align: center;
+    /* width: 300px; */
+    /* height: 100px; */
+    line-height: 100px;
+
+    /* font-weight: 900; */
+    /* Réduire la taille de la police pour l'adapter */
+     background: linear-gradient(0deg, #00fffb 0%), rgb(146, 162, 242);
+     box-shadow: rgba(146, 162, 242) 0px 40px 29px 0px;
+     will-change: transform;
+     transition: all 0.3s;
+     white-space: nowrap; 
+     font-size: 30px; /* Taille de la police */
+     color: white; /* Couleur du texte */
+     font-family: Arial, sans-serif; /* Style de police */
+     font-weight: normal; /* Poids de la police */
+     line-height: 1; /* Hauteur de ligne */
+     display: inline-block;
+   
+ 
+}
+
+.button:hover {
+    background-color: #6b8bbc;
+}
+.intro1{
+    text-shadow: 0px 0px 10px #ff04a7,
+                 0px 0px 20px #6b8bbc,
+                 0px 0px 40px #f4e53a,
+                 0px 0px 80px #596a9f;
+    font-size: 50px;
+
+    color: #6b8bbc;
+    text-align: center;
+
+}
+
+    .border2 {
+        border: none
+       
+    }
+    
+    
+    
+    
+    
+   
+
+    
+  
+    

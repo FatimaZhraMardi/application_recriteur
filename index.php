@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse " id="main">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
           <li class="nav-item">
-          <a class="nav-link p-2 p-lg-3 " href="#">Accueil</a>
+          <a class="nav-link p-2 p-lg-3 " href="index.php">Accueil</a>
           </li>
           <li>
           <a class="nav-link p-2 p-lg-3" href="#contact">Contact</a>
@@ -40,7 +40,7 @@
             </li>
       </ul>
       <div class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <a class="btn rounded-pill main-btn" href="#" id="connecter">Se connecter</a>
+        <a class="btn rounded-pill main-btn" href="login.php" id="connecter">Se connecter</a>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@
   <!-- <p class="fs-6 text-white-50 mb-5">Lorem ipsum dolor sit amet consecteture adipisicing elit.At,non unde!vitae vero,dolores,<br>vel ex voluptate delectus veniam ipsum laudantiumrecu sandae<br>
        aut iusto ,ratiome mariores margin.</p>
   </p>-->
-    <a class="btn rounded-pill main-btn" href="#" id="inscription">S'inscrire</a>
+    <a class="btn rounded-pill main-btn" href="inscrire.php" id="inscription">S'inscrire</a>
   </div>
 </div>
 </header>

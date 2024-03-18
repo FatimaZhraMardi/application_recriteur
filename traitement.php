@@ -1,6 +1,11 @@
 <?php
 
 // Connexion à la base de données
+function sendemail_verifile($nom,$email,$verify_token) {
+    
+
+}  
+
 
 if(isset($_POST["valid"])){
 $nom_entreprise=$_POST['nom_entreprise'];
@@ -14,6 +19,7 @@ $tel=$_POST['tel'];
 $email=$_POST['email'];
 $password=$_POST['password'];
 $confirm_password=$_POST['confirm_password'];
+// $verify_token= md5(rand());
 
 require_once 'data_base.php';
 
@@ -23,7 +29,8 @@ $checkEmailExecute = $cnx->query($checkEmail);
 $checkEmailResult = $checkEmailExecute->fetchAll();
 if(!empty($checkEmailResult)){
     
-    echo '<script>alert("Email déjà utilisé")</script>';
+     echo '<script>alert("Email déjà utilisé")</script>';
+    //  header("location: recruteur.php");
     
 }
 
@@ -42,6 +49,9 @@ else{
         $sth1 = $cnx->query($sql1);
         $result = $sth1->fetch();
         session_start();
+        // cree email
+        sendemail_verifile("$nom","$email","$verify_token"); 
+        $_SESSION['id_recruteur'] = "register successfull.!please verfiy your email adress";
         $_SESSION['id_recruteur'] = $result["id_rec"];
         $_SESSION["id_recruteur"];
         
@@ -49,12 +59,14 @@ else{
     }
     else{
         
-        header("location: recruteur.php");
+        header("location: index.php");
     }
 }
 }
 }
-?>
-<?php
+
 
 ?>
+
+
+
