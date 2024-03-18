@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `annonce` (
   `titre` text NOT NULL,
   `description` text NOT NULL,
-  `salaire` text NOT NULL
+  `salaire` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
