@@ -131,7 +131,7 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
                     <p class="formation">Bac+5</p>
                   </div>
 
-                    <a href="#">Voir CV</a> 
+                    <a href="cv.html">Voir CV</a> 
                     <a href="#">Envoyer un message</a> 
                 </li>   
                 <li class="cvItem"> 
@@ -150,7 +150,7 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
                   <p class="formation">Bac+3</p>
                 </div>
 
-                  <a href="#">Voir CV</a> 
+                  <a href="cv.html">Voir CV</a> 
                   <a href="#">Envoyer un message</a> 
               </li> 
               <?php  
