@@ -34,7 +34,8 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
           </div>
           <div class="offcanvas-body">
             <a href="#" class="opt">parametre</a>
-            <a href="" class="opt">Créer un annonce</a>
+            <br>
+            <a href="annonce.php" class="opt">Créer un annonce</a>
           </div>
     </div>
     </div>
