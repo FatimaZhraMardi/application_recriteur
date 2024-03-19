@@ -55,7 +55,7 @@ else{
         $_SESSION['id_recruteur'] = $result["id_rec"];
         $_SESSION["id_recruteur"];
         
-        header("location: inscrire.php");
+        header("location: profilR.php");
     }
     else{
         
