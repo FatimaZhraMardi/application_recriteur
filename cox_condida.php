@@ -44,7 +44,7 @@
             session_start();
            
         
-            header("location: inscrire.php");
+            header("location: profil.php");
     }
     else{
         
