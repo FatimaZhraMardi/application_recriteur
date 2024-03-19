@@ -116,7 +116,7 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
         <section class="cv">
             <ul id="cvList"> 
                 <li class="cvItem"> 
-                    
+                <img src="per1.webp">   
                     <h3 >Profil numero : 1</h3>
                     <div class="champ">
                       <strong id="strong">Domaine :</STRong>
